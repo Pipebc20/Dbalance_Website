@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "features":  "Funcionalidades",
+    "howItWorks":"Como funciona",
+    "benefits":  "Benefícios",
+    "faq":       "FAQ",
+    "login":     "Entrar",
+    "register":  "Cadastrar"
+  },
+  "hero": {
+    "title1": "Gerencie suas",
+    "title2": "finanças com",
+    "brand":  "DBalance",
+    "sub":    "A forma mais inteligente de controlar suas receitas, despesas e alcançar suas metas financeiras.",
+    "cta":    "Começar agora",
+    "demo":   "Ver como funciona"
+  },
+  "card": {
+    "title":   "Resumo mensal",
+    "period":  "Maio 2025",
+    "balance": "Saldo líquido do mês",
+    "income":  "Total receitas",
+    "expense": "Total despesas",
+    "net":     "Saldo"
+  },
+  "features": {
+    "label": "Funcionalidades",
+    "title": "Tudo o que você precisa",
+    "sub":   "Recursos pensados para que você controle suas finanças sem complicação.",
+    "items": [
+      { "title": "Gráficos em tempo real",         "desc": "Veja receitas e despesas em gráficos de pizza que se atualizam instantaneamente." },
+      { "title": "Acesso de qualquer dispositivo", "desc": "Interface responsiva para computador, tablet ou celular, sem downloads." },
+      { "title": "Login seguro",                   "desc": "Acesse com e-mail ou Google, protegido por autenticação com token." },
+      { "title": "Multilíngue",                    "desc": "Disponível em Espanhol, Inglês, Francês e Português. Troque quando quiser." },
+      { "title": "Controle de receitas e despesas","desc": "Adicione, edite e exclua transações com categoria, valor e data." },
+      { "title": "Histórico completo",             "desc": "Consulte todas as suas transações com datas e categorias a qualquer momento." }
+    ]
+  },
+  "how": {
+    "label": "Como funciona",
+    "title": "Comece em 4 passos",
+    "sub":   "Sem configurações complexas. Só entre e comece a registrar.",
+    "steps": [
+      { "title": "Crie sua conta",          "desc": "Cadastre-se gratuitamente com seu e-mail ou entre com o Google." },
+      { "title": "Adicione suas receitas",  "desc": "Registre cada fonte de receita com categoria, valor e descrição." },
+      { "title": "Registre suas despesas",  "desc": "Anote cada despesa na hora para um acompanhamento preciso." },
+      { "title": "Analise seu saldo",       "desc": "Veja gráficos e seu saldo líquido para tomar melhores decisões." }
+    ]
+  },
+  "benefits": {
+    "label": "Benefícios",
+    "title": "Por que escolher DBalance?",
+    "items": [
+      { "title": "Interface limpa e intuitiva", "desc": "Sem curva de aprendizado. Comece a registrar suas finanças no primeiro minuto." },
+      { "title": "Dados sempre atualizados",    "desc": "Cada transação reflete instantaneamente nos seus totais e gráficos." },
+      { "title": "Sem instalação",              "desc": "Só um navegador e conexão à internet. Sem downloads." },
+      { "title": "4 idiomas disponíveis",       "desc": "Troque entre ES, EN, FR e PT a qualquer momento pela barra de navegação." }
+    ],
+    "preview": {
+      "tab1": "Início", "tab2": "Receitas", "tab3": "Despesas",
+      "col1": "#", "col2": "Categoria", "col3": "Valor", "col4": "Descrição", "col5": "Data",
+      "total": "TOTAL RECEITAS"
+    }
+  },
+  "faq": {
+    "label": "Perguntas frequentes",
+    "title": "Tem dúvidas?",
+    "sub":   "Aqui respondemos as mais comuns antes mesmo de você perguntar.",
+    "items": [
+      { "q": "DBalance é gratuito?",                    "a": "Sim, você pode se cadastrar e usar o DBalance completamente de graça." },
+      { "q": "Meus dados estão seguros?",               "a": "Usamos autenticação por token. Suas informações nunca são compartilhadas." },
+      { "q": "Funciona no celular?",                    "a": "Sim, é totalmente responsivo. Não precisa baixar nenhum aplicativo." },
+      { "q": "Posso mudar o idioma?",                   "a": "Sim. Troque entre Espanhol, Inglês, Francês e Português pela barra de navegação." },
+      { "q": "Posso editar ou excluir transações?",     "a": "Sim. Em Receitas e Despesas você encontra botões de editar e excluir em cada linha." }
+    ]
+  },
+  "cta": {
+    "title":   "Pronto para assumir o controle?",
+    "sub":     "Cadastre-se gratuitamente e comece a gerenciar suas finanças hoje.",
+    "primary": "Criar conta grátis",
+    "ghost":   "Já tenho uma conta"
+  },
+  "footer": {
+    "desc": "A forma mais inteligente de gerenciar suas finanças pessoais.",
+    "product":  "Produto",
+    "company":  "Empresa",
+    "legal":    "Legal",
+    "p1": "Funcionalidades", "p2": "Como funciona", "p3": "FAQ",
+    "c1": "Sobre nós",       "c2": "Contato",        "c3": "Blog",
+    "l1": "Privacidade",     "l2": "Termos",
+    "copy": "© 2026 DBalance. Todos os direitos reservados.",
+    "made": "Feito com ♥ na Colômbia"
+  }
+}

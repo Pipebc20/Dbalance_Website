@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "features":  "Features",
+    "howItWorks":"How it works",
+    "benefits":  "Benefits",
+    "faq":       "FAQ",
+    "login":     "Sign in",
+    "register":  "Register"
+  },
+  "hero": {
+    "title1": "Manage your",
+    "title2": "finances with",
+    "brand":  "DBalance",
+    "sub":    "The smartest way to track your income, expenses and reach your financial goals.",
+    "cta":    "Get started",
+    "demo":   "See how it works"
+  },
+  "card": {
+    "title":   "Monthly summary",
+    "period":  "May 2025",
+    "balance": "Net balance for the month",
+    "income":  "Total income",
+    "expense": "Total expenses",
+    "net":     "Balance"
+  },
+  "features": {
+    "label": "Features",
+    "title": "Everything you need",
+    "sub":   "Built so you can take control of your finances without the complexity.",
+    "items": [
+      { "title": "Real-time charts",          "desc": "See income and expenses in pie charts that update instantly." },
+      { "title": "Access from any device",    "desc": "Responsive interface for desktop, tablet or mobile — no download needed." },
+      { "title": "Secure sign-in",            "desc": "Sign in with email or Google, protected by token-based authentication." },
+      { "title": "Multilanguage",             "desc": "Available in Spanish, English, French and Portuguese. Switch anytime." },
+      { "title": "Income & expense control",  "desc": "Add, edit and delete transactions with category, amount and date." },
+      { "title": "Full history",              "desc": "Browse all your transactions with dates and categories at any time." }
+    ]
+  },
+  "how": {
+    "label": "How it works",
+    "title": "Start in 4 steps",
+    "sub":   "No complex setup. Just sign in and start tracking.",
+    "steps": [
+      { "title": "Create your account", "desc": "Sign up free with your email or continue with Google." },
+      { "title": "Add your income",     "desc": "Record each income source with category, amount and description." },
+      { "title": "Log your expenses",   "desc": "Note every expense on the spot for precise tracking." },
+      { "title": "Analyze your balance","desc": "View charts and your net balance to make better decisions." }
+    ]
+  },
+  "benefits": {
+    "label": "Benefits",
+    "title": "Why choose DBalance?",
+    "items": [
+      { "title": "Clean, intuitive interface", "desc": "No learning curve. Start recording finances from your very first minute." },
+      { "title": "Always up-to-date data",     "desc": "Every transaction instantly reflects in your totals and charts." },
+      { "title": "No installation required",   "desc": "Just a browser and internet connection. No downloads." },
+      { "title": "4 languages available",      "desc": "Switch between ES, EN, FR and PT anytime from the navigation bar." }
+    ],
+    "preview": {
+      "tab1": "Home", "tab2": "Income", "tab3": "Expenses",
+      "col1": "#", "col2": "Category", "col3": "Amount", "col4": "Description", "col5": "Date",
+      "total": "TOTAL INCOME"
+    }
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Any questions?",
+    "sub":   "Here are the most common ones answered before you even ask.",
+    "items": [
+      { "q": "Is DBalance free?",                    "a": "Yes, you can sign up and use DBalance completely free." },
+      { "q": "Is my data safe?",                     "a": "We use token-based authentication. Your data is never shared." },
+      { "q": "Does it work on mobile?",              "a": "Yes, it's fully responsive. No app download needed." },
+      { "q": "Can I change the language?",           "a": "Yes. Switch between Spanish, English, French and Portuguese from the nav bar." },
+      { "q": "Can I edit or delete transactions?",   "a": "Yes. In Income and Expenses you'll find edit and delete buttons on each row." }
+    ]
+  },
+  "cta": {
+    "title":   "Ready to take control?",
+    "sub":     "Sign up free and start managing your finances today.",
+    "primary": "Create free account",
+    "ghost":   "I already have an account"
+  },
+  "footer": {
+    "desc": "The smartest way to manage your personal finances.",
+    "product":  "Product",
+    "company":  "Company",
+    "legal":    "Legal",
+    "p1": "Features",     "p2": "How it works", "p3": "FAQ",
+    "c1": "About us",     "c2": "Contact",       "c3": "Blog",
+    "l1": "Privacy",      "l2": "Terms",
+    "copy": "© 2026 DBalance. All rights reserved.",
+    "made": "Made with ♥ in Colombia"
+  }
+}

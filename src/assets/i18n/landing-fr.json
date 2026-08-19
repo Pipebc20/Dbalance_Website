@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "features":  "Fonctionnalités",
+    "howItWorks":"Comment ça marche",
+    "benefits":  "Avantages",
+    "faq":       "FAQ",
+    "login":     "Se connecter",
+    "register":  "S'inscrire"
+  },
+  "hero": {
+    "title1": "Gérez vos",
+    "title2": "finances avec",
+    "brand":  "DBalance",
+    "sub":    "La façon la plus intelligente de contrôler vos revenus, dépenses et atteindre vos objectifs financiers.",
+    "cta":    "Commencer maintenant",
+    "demo":   "Voir comment ça marche"
+  },
+  "card": {
+    "title":   "Résumé mensuel",
+    "period":  "Mai 2025",
+    "balance": "Solde net du mois",
+    "income":  "Total revenus",
+    "expense": "Total dépenses",
+    "net":     "Solde"
+  },
+  "features": {
+    "label": "Fonctionnalités",
+    "title": "Tout ce dont vous avez besoin",
+    "sub":   "Conçu pour que vous preniez le contrôle de vos finances sans complexité.",
+    "items": [
+      { "title": "Graphiques en temps réel",        "desc": "Visualisez revenus et dépenses avec des graphiques qui se mettent à jour instantanément." },
+      { "title": "Accès depuis n'importe où",       "desc": "Interface responsive pour ordinateur, tablette ou mobile, sans téléchargement." },
+      { "title": "Connexion sécurisée",             "desc": "Connectez-vous avec votre email ou Google, protégé par authentification par token." },
+      { "title": "Multilingue",                     "desc": "Disponible en Espagnol, Anglais, Français et Portugais. Changez à tout moment." },
+      { "title": "Contrôle revenus et dépenses",   "desc": "Ajoutez, modifiez et supprimez des transactions avec catégorie, montant et date." },
+      { "title": "Historique complet",              "desc": "Consultez toutes vos transactions avec dates et catégories à tout moment." }
+    ]
+  },
+  "how": {
+    "label": "Comment ça marche",
+    "title": "Commencez en 4 étapes",
+    "sub":   "Pas de configuration complexe. Entrez et commencez à enregistrer.",
+    "steps": [
+      { "title": "Créez votre compte",       "desc": "Inscrivez-vous gratuitement avec votre email ou via Google." },
+      { "title": "Ajoutez vos revenus",      "desc": "Enregistrez chaque source de revenu avec catégorie et montant." },
+      { "title": "Enregistrez vos dépenses", "desc": "Notez chaque dépense sur le moment pour un suivi précis." },
+      { "title": "Analysez votre solde",     "desc": "Consultez les graphiques et votre solde net pour de meilleures décisions." }
+    ]
+  },
+  "benefits": {
+    "label": "Avantages",
+    "title": "Pourquoi choisir DBalance ?",
+    "items": [
+      { "title": "Interface claire et intuitive", "desc": "Sans courbe d'apprentissage. Commencez à enregistrer dès la première minute." },
+      { "title": "Données toujours à jour",       "desc": "Chaque transaction se reflète instantanément dans vos totaux et graphiques." },
+      { "title": "Sans installation",             "desc": "Juste un navigateur et une connexion internet. Sans téléchargement." },
+      { "title": "4 langues disponibles",         "desc": "Changez entre ES, EN, FR et PT à tout moment depuis la barre de navigation." }
+    ],
+    "preview": {
+      "tab1": "Accueil", "tab2": "Revenus", "tab3": "Dépenses",
+      "col1": "#", "col2": "Catégorie", "col3": "Montant", "col4": "Description", "col5": "Date",
+      "total": "TOTAL REVENUS"
+    }
+  },
+  "faq": {
+    "label": "Questions fréquentes",
+    "title": "Des questions ?",
+    "sub":   "Voici les plus courantes répondues avant même que vous les posiez.",
+    "items": [
+      { "q": "DBalance est-il gratuit ?",              "a": "Oui, vous pouvez vous inscrire et utiliser DBalance gratuitement." },
+      { "q": "Mes données sont-elles sécurisées ?",    "a": "Nous utilisons l'authentification par token. Vos données ne sont jamais partagées." },
+      { "q": "Fonctionne-t-il sur mobile ?",           "a": "Oui, il est entièrement responsive. Aucune application à télécharger." },
+      { "q": "Puis-je changer la langue ?",            "a": "Oui. Changez entre Espagnol, Anglais, Français et Portugais depuis la barre de navigation." },
+      { "q": "Puis-je modifier ou supprimer ?",        "a": "Oui. Dans Revenus et Dépenses vous trouverez des boutons d'édition et suppression." }
+    ]
+  },
+  "cta": {
+    "title":   "Prêt à prendre le contrôle ?",
+    "sub":     "Inscrivez-vous gratuitement et commencez à gérer vos finances dès aujourd'hui.",
+    "primary": "Créer un compte gratuit",
+    "ghost":   "J'ai déjà un compte"
+  },
+  "footer": {
+    "desc": "La façon la plus intelligente de gérer vos finances personnelles.",
+    "product":  "Produit",
+    "company":  "Entreprise",
+    "legal":    "Légal",
+    "p1": "Fonctionnalités", "p2": "Comment ça marche", "p3": "FAQ",
+    "c1": "À propos",        "c2": "Contact",             "c3": "Blog",
+    "l1": "Confidentialité", "l2": "Conditions",
+    "copy": "© 2026 DBalance. Tous droits réservés.",
+    "made": "Fait avec ♥ en Colombie"
+  }
+}

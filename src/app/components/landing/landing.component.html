@@ -1,0 +1,322 @@
+<div class="landing" *ngIf="t?.nav">
+
+  <!-- ══ NAV ══ -->
+  <nav class="nav">
+    <div class="nav-brand">
+    <i class="bi bi-bar-chart me-2" style="font-size: 1.5rem;"></i> <!-- Ícono de gráfica de barras -->
+    <a class="nav-brand" (click)="goTo('http://localhost:4201')">
+    <span><strong>D</strong>Balance</span>
+    </a>
+    </div>
+
+    <div class="nav-links">
+      <a href="#caracteristicas">{{ t.nav.features }}</a>
+      <a href="#como-funciona">{{ t.nav.howItWorks }}</a>
+      <a href="#beneficios">{{ t.nav.benefits }}</a>
+      <a href="#faq">{{ t.nav.faq }}</a>
+    </div>
+
+    <div class="nav-right">
+      <div class="lang-selector" (click)="showLang = !showLang">
+        <img [src]="'https://flagcdn.com/w40/' + currentLang.country.toLowerCase() + '.png'"
+           [alt]="currentLang.label" width="20" height="15" class="flag-img"/>
+       <span class="lang-code">{{ currentLang.label }}</span>
+       <svg width="10" height="7" viewBox="0 0 10 7" fill="none" stroke="currentColor" stroke-width="1.5">
+         <path d="M1 1l4 4 4-4"/>
+        </svg>
+        <div class="lang-dropdown" *ngIf="showLang" (click)="$event.stopPropagation()">
+        <button *ngFor="let l of langs" (click)="setLang(l.code)" [class.active]="l.code === lang">
+       <img [src]="'https://flagcdn.com/w40/' + l.country.toLowerCase() + '.png'"
+           [alt]="l.label" width="20" height="15" class="flag-img"/>
+          {{ l.label }}
+       </button>
+      </div>
+   </div>
+      <button class="btn-ghost" (click)="goTo('http://localhost:4200/login')">
+      {{ t.nav.login }}
+      </button>
+      <button class="btn-register" (click)="goTo('http://localhost:4200/registro')">
+      {{ t.nav.register }}
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>
+        {{ t.hero.title1 }}<br>
+        {{ t.hero.title2 }}<br>
+        <span class="accent">{{ t.hero.brand }}</span>
+      </h1>
+      <p>{{ t.hero.sub }}</p>
+      <div class="hero-btns">
+        <button class="btn-primary" (click)="goTo('http://localhost:4200/login')">
+        {{ t.hero.cta }}
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+        </button>
+        <a href="#como-funciona" class="btn-outline">{{ t.hero.demo }}</a>
+      </div>
+    </div>
+
+    <!-- Mini dashboard — igual a la imagen -->
+    <div class="hero-card">
+      <div class="hc-header">
+        <span class="hc-title">{{ t.card.title }}</span>
+        <span class="hc-badge">{{ t.card.period }}</span>
+      </div>
+      <div class="hc-amount">$52,250</div>
+      <div class="hc-sub">{{ t.card.balance }}</div>
+      <div class="hc-chart">
+        <svg viewBox="0 0 300 90" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="gr" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"   stop-color="#3b9ede" stop-opacity="0.18"/>
+              <stop offset="100%" stop-color="#3b9ede" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <polygon points="0,80 40,68 80,52 120,60 160,38 200,26 240,42 300,18 300,90 0,90" fill="url(#gr)"/>
+          <polyline points="0,80 40,68 80,52 120,60 160,38 200,26 240,42 300,18"
+            fill="none" stroke="#3b9ede" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="300" cy="18" r="5" fill="#3b9ede"/>
+        </svg>
+      </div>
+      <div class="hc-row">
+        <span class="hc-label">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+            <polyline points="17 6 23 6 23 12"/>
+          </svg>
+          {{ t.card.income }}
+        </span>
+        <span class="hc-val c-green">$100,249</span>
+      </div>
+      <div class="hc-row">
+        <span class="hc-label">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/>
+            <polyline points="17 18 23 18 23 12"/>
+          </svg>
+          {{ t.card.expense }}
+        </span>
+        <span class="hc-val c-red">$47,999</span>
+      </div>
+      <div class="hc-row">
+        <span class="hc-label">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="8" x2="12" y2="12"/>
+            <line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+          {{ t.card.net }}
+        </span>
+        <span class="hc-val c-blue">$52,250</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CARACTERÍSTICAS ══ -->
+  <section class="features s-white" id="caracteristicas">
+    <div class="s-head">
+      <div class="s-label">{{ t.features.label }}</div>
+      <h2 class="s-title">{{ t.features.title }}</h2>
+      <p class="s-sub">{{ t.features.sub }}</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat-card" *ngFor="let item of t.features.items; let i = index">
+        <div class="feat-icon" [style.background]="featureIcons[i]?.bg">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+               [attr.stroke]="featureIcons[i]?.stroke" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <ng-container [ngSwitch]="i">
+              <ng-container *ngSwitchCase="0">
+                <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/>
+                <path d="M22 12A10 10 0 0 0 12 2v10z"/>
+              </ng-container>
+              <ng-container *ngSwitchCase="1">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </ng-container>
+              <ng-container *ngSwitchCase="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </ng-container>
+              <ng-container *ngSwitchCase="3">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </ng-container>
+              <ng-container *ngSwitchCase="4">
+                <line x1="12" y1="1" x2="12" y2="23"/>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </ng-container>
+              <ng-container *ngSwitchDefault>
+                <polyline points="12 20 12 10"/>
+                <polyline points="18 20 18 4"/>
+                <polyline points="6 20 6 16"/>
+              </ng-container>
+            </ng-container>
+          </svg>
+        </div>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.desc }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CÓMO FUNCIONA ══ -->
+  <section class="how s-bg" id="como-funciona">
+    <div class="s-head">
+      <div class="s-label">{{ t.how.label }}</div>
+      <h2 class="s-title">{{ t.how.title }}</h2>
+      <p class="s-sub">{{ t.how.sub }}</p>
+    </div>
+    <div class="steps">
+      <div class="step" *ngFor="let s of t.how.steps; let i = index">
+        <div class="step-num">{{ i + 1 }}</div>
+        <h4>{{ s.title }}</h4>
+        <p>{{ s.desc }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ BENEFICIOS ══ -->
+  <section class="benefits s-white" id="beneficios">
+    <div class="s-head">
+      <div class="s-label">{{ t.benefits.label }}</div>
+      <h2 class="s-title">{{ t.benefits.title }}</h2>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-list">
+        <div class="benefit-item" *ngFor="let b of t.benefits.items; let i = index">
+          <div class="benefit-ico" [style.background]="benefitIcons[i]?.bg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                 [attr.stroke]="benefitIcons[i]?.stroke" stroke-width="2.5"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <div>
+            <h4>{{ b.title }}</h4>
+            <p>{{ b.desc }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Preview app — mockup navegador con datos reales -->
+      <div class="preview-panel" *ngIf="t.benefits.preview as pv">
+        <div class="pp-bar">
+          <span class="pp-dot" style="background:#ff5f57;"></span>
+          <span class="pp-dot" style="background:#febc2e;"></span>
+          <span class="pp-dot" style="background:#28c840;"></span>
+          <span class="pp-url">dbalance.app / ingresos</span>
+        </div>
+        <div class="pp-body">
+          <div class="pp-tabs">
+            <span>{{ pv.tab1 }}</span>
+            <span class="active">{{ pv.tab2 }}</span>
+            <span>{{ pv.tab3 }}</span>
+          </div>
+          <table class="pp-table">
+            <thead>
+              <tr>
+                <th>{{ pv.col1 }}</th><th>{{ pv.col2 }}</th>
+                <th>{{ pv.col3 }}</th><th>{{ pv.col4 }}</th><th>{{ pv.col5 }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mu">1</td><td>Salary</td>
+                <td class="c-green fw">$USD500</td>
+                <td class="mu">Mensual Salary</td><td class="mu">07/05/2025</td>
+              </tr>
+              <tr>
+                <td class="mu">2</td><td>Subside</td>
+                <td class="c-green fw">$USD250</td>
+                <td class="mu">Subside amont</td><td class="mu">16/04/2025</td>
+              </tr>
+              <tr>
+                <td class="mu">3</td><td>Venta_Ropa</td>
+                <td class="c-green fw">$USD100</td>
+                <td class="mu">Venta mensual de ropa</td><td class="mu">22/08/2025</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pp-total">
+            <span class="pp-total-label">{{ pv.total }}</span>
+            <span class="pp-total-val">▲ $USD850</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FAQ ══ -->
+  <section class="faq s-bg" id="faq">
+    <div class="s-head">
+      <div class="s-label">{{ t.faq.label }}</div>
+      <h2 class="s-title">{{ t.faq.title }}</h2>
+      <p class="s-sub">{{ t.faq.sub }}</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item" *ngFor="let item of t.faq.items; let i = index"
+           [class.open]="openFaq === i" (click)="toggleFaq(i)">
+        <div class="faq-q">
+          <span>{{ item.q }}</span>
+          <span class="faq-icon">{{ openFaq === i ? '−' : '+' }}</span>
+        </div>
+        <div class="faq-a" *ngIf="openFaq === i">{{ item.a }}</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CTA ══ -->
+  <section class="cta-section">
+    <h2>{{ t.cta.title }}</h2>
+    <p>{{ t.cta.sub }}</p>
+    <div class="cta-actions">
+      <button class="btn-cta" (click)="goTo('http://localhost:4200/registro')">
+      {{ t.cta.primary }}
+      </button>
+      <button class="btn-cta-ghost" (click)="goTo('http://localhost:4200/login')">
+        {{ t.cta.ghost }}
+      </button>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer *ngIf="t.footer as f">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-name">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <rect x="2"  y="14" width="4" height="8"  rx="1" fill="#3b9ede" opacity="0.5"/>
+            <rect x="10" y="9"  width="4" height="13" rx="1" fill="#3b9ede" opacity="0.75"/>
+            <rect x="18" y="4"  width="4" height="18" rx="1" fill="#3b9ede"/>
+          </svg>
+          <span><strong>D</strong>Balance</span>
+        </div>
+        <p>{{ f.desc }}</p>
+      </div>
+      <div class="footer-col">
+        <h4>{{ f.product }}</h4>
+        <ul><li>{{ f.p1 }}</li><li>{{ f.p2 }}</li><li>{{ f.p3 }}</li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>{{ f.company }}</h4>
+        <ul><li>{{ f.c1 }}</li><li>{{ f.c2 }}</li><li>{{ f.c3 }}</li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>{{ f.legal }}</h4>
+        <ul><li>{{ f.l1 }}</li><li>{{ f.l2 }}</li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>{{ f.copy }}</span>
+      <span>{{ f.made }}</span>
+    </div>
+  </footer>
+
+</div>

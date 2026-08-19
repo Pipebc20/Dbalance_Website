@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "features":  "Características",
+    "howItWorks":"Cómo funciona",
+    "benefits":  "Beneficios",
+    "faq":       "FAQ",
+    "login":     "Iniciar sesión",
+    "register":  "Registrarse"
+  },
+  "hero": {
+    "title1": "Gestiona tus",
+    "title2": "finanzas con",
+    "brand":  "DBalance",
+    "sub":    "La forma más inteligente de controlar tus ingresos, gastos y alcanzar tus metas financieras.",
+    "cta":    "Comenzar ahora",
+    "demo":   "Ver cómo funciona"
+  },
+  "card": {
+    "title":   "Resumen mensual",
+    "period":  "Mayo 2025",
+    "balance": "Balance neto del mes",
+    "income":  "Total ingresos",
+    "expense": "Total gastos",
+    "net":     "Balance"
+  },
+  "features": {
+    "label": "Características",
+    "title": "Todo lo que necesitas",
+    "sub":   "Funcionalidades pensadas para que tomes el control de tus finanzas sin complicaciones.",
+    "items": [
+      { "title": "Gráficos en tiempo real",          "desc": "Visualiza ingresos y gastos con gráficos de torta que se actualizan al instante." },
+      { "title": "Acceso desde cualquier dispositivo","desc": "Interfaz responsiva para computadora, tablet o celular sin descargas." },
+      { "title": "Inicio de sesión seguro",          "desc": "Accede con tu correo o con Google, protegido con autenticación por token." },
+      { "title": "Multiidioma",                      "desc": "Disponible en Español, Inglés, Francés y Portugués. Cambia cuando quieras." },
+      { "title": "Control de ingresos y gastos",     "desc": "Registra, edita y elimina transacciones con categoría, monto y fecha." },
+      { "title": "Historial completo",               "desc": "Consulta todas tus transacciones con fechas y categorías en cualquier momento." }
+    ]
+  },
+  "how": {
+    "label": "Cómo funciona",
+    "title": "Empieza en 4 pasos",
+    "sub":   "Sin configuraciones complicadas. Solo entra y empieza a registrar.",
+    "steps": [
+      { "title": "Crea tu cuenta",        "desc": "Regístrate gratis con tu correo o entra directamente con Google." },
+      { "title": "Agrega tus ingresos",   "desc": "Registra cada fuente de ingreso con categoría, monto y descripción." },
+      { "title": "Registra tus gastos",   "desc": "Anota cada gasto al momento para un seguimiento preciso." },
+      { "title": "Analiza tu balance",    "desc": "Consulta gráficos y tu balance neto para mejores decisiones." }
+    ]
+  },
+  "benefits": {
+    "label": "Beneficios",
+    "title": "¿Por qué elegir DBalance?",
+    "items": [
+      { "title": "Interfaz limpia e intuitiva",  "desc": "Sin curva de aprendizaje. Empieza a registrar tus finanzas desde el primer minuto." },
+      { "title": "Datos siempre actualizados",   "desc": "Cada transacción se refleja de inmediato en tus totales y gráficos." },
+      { "title": "Sin instalaciones",            "desc": "Solo necesitas un navegador y conexión a internet. Sin descargas." },
+      { "title": "Disponible en 4 idiomas",      "desc": "Cambia entre ES, EN, FR y PT en cualquier momento desde la barra de navegación." }
+    ],
+    "preview": {
+      "tab1": "Inicio", "tab2": "Ingresos", "tab3": "Gastos",
+      "col1": "#", "col2": "Categoría", "col3": "Monto", "col4": "Descripción", "col5": "Fecha",
+      "total": "TOTAL INGRESOS"
+    }
+  },
+  "faq": {
+    "label": "Preguntas frecuentes",
+    "title": "¿Tienes dudas?",
+    "sub":   "Aquí resolvemos las más comunes antes de que las tengas.",
+    "items": [
+      { "q": "¿DBalance es gratuito?",                       "a": "Sí, puedes registrarte y usar DBalance de forma completamente gratuita." },
+      { "q": "¿Mis datos están seguros?",                    "a": "Usamos autenticación segura con tokens. Tu información no se comparte con nadie." },
+      { "q": "¿Funciona en el celular?",                     "a": "Sí, es totalmente responsivo. No necesitas descargar ninguna app." },
+      { "q": "¿Puedo cambiar el idioma?",                    "a": "Claro. Cambia entre Español, Inglés, Francés y Portugués desde la barra de navegación." },
+      { "q": "¿Puedo editar o eliminar transacciones?",      "a": "Sí. En Ingresos y Gastos encontrarás botones de editar y eliminar en cada registro." }
+    ]
+  },
+  "cta": {
+    "title":   "¿Listo para tomar el control?",
+    "sub":     "Regístrate gratis y empieza a gestionar tus finanzas hoy mismo.",
+    "primary": "Crear cuenta gratis",
+    "ghost":   "Ya tengo cuenta"
+  },
+  "footer": {
+    "desc": "La forma más inteligente de gestionar tus finanzas personales.",
+    "product":  "Producto",
+    "company":  "Compañía",
+    "legal":    "Legal",
+    "p1": "Características", "p2": "Cómo funciona", "p3": "Preguntas frecuentes",
+    "c1": "Sobre nosotros",  "c2": "Contacto",       "c3": "Blog",
+    "l1": "Privacidad",      "l2": "Términos",
+    "copy":    "© 2026 DBalance. Todos los derechos reservados.",
+    "made":    "Hecho con ♥ en Colombia"
+  }
+}
