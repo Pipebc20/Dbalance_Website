@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../../environments/environment';
 
 export type Lang = 'es' | 'en' | 'fr' | 'pt';
 
@@ -54,8 +55,8 @@ export class LandingComponent implements OnInit {
     });
   }
 
-  goTo(url: string): void {
-  window.location.href = url;
+  goTo(path: string): void {
+  window.location.href = `${environment.appUrl}${path}`;
   }
 
   setLang(code: string): void {

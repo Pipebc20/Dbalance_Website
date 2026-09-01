@@ -4,7 +4,7 @@
   <nav class="nav">
     <div class="nav-brand">
     <i class="bi bi-bar-chart me-2" style="font-size: 1.5rem;"></i> <!-- Ícono de gráfica de barras -->
-    <a class="nav-brand" (click)="goTo('http://localhost:4201')">
+    <a class="nav-brand" (click)="goTo('/')">
     <span><strong>D</strong>Balance</span>
     </a>
     </div>
@@ -32,10 +32,10 @@
        </button>
       </div>
    </div>
-      <button class="btn-ghost" (click)="goTo('http://localhost:4200/login')">
+      <button class="btn-ghost" (click)="goTo('/login')">
       {{ t.nav.login }}
       </button>
-      <button class="btn-register" (click)="goTo('http://localhost:4200/registro')">
+      <button class="btn-register" (click)="goTo('/registro')">
       {{ t.nav.register }}
       </button>
     </div>
@@ -51,7 +51,7 @@
       </h1>
       <p>{{ t.hero.sub }}</p>
       <div class="hero-btns">
-        <button class="btn-primary" (click)="goTo('http://localhost:4200/login')">
+        <button class="btn-primary" (click)="goTo('/login')">
         {{ t.hero.cta }}
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
         <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -277,10 +277,10 @@
     <h2>{{ t.cta.title }}</h2>
     <p>{{ t.cta.sub }}</p>
     <div class="cta-actions">
-      <button class="btn-cta" (click)="goTo('http://localhost:4200/registro')">
+      <button class="btn-cta" (click)="goTo('/registro')">
       {{ t.cta.primary }}
       </button>
-      <button class="btn-cta-ghost" (click)="goTo('http://localhost:4200/login')">
+      <button class="btn-cta-ghost" (click)="goTo('/login')">
         {{ t.cta.ghost }}
       </button>
     </div>
