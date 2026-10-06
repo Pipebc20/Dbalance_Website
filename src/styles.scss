@@ -1,11 +1,22 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+:root {
+  --page-bg: #f8fafc;
+  --page-text: #1e293b;
+}
+
+[data-theme="dark"] {
+  --page-bg: #0b1220;
+  --page-text: #e2e8f0;
+  color-scheme: dark; /* barras de scroll y controles nativos en oscuro */
+}
+
 html { scroll-behavior: smooth; }
 
 body {
   font-family: 'DM Sans', sans-serif;
-  background: #f8fafc;
-  color: #1e293b;
+  background: var(--page-bg);
+  color: var(--page-text);
   -webkit-font-smoothing: antialiased;
 }
 

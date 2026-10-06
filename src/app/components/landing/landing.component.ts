@@ -43,7 +43,23 @@ export class LandingComponent implements OnInit {
     { bg: '#eeedfe', stroke: '#534ab7' },
   ];
 
-  constructor(private http: HttpClient) {}
+  dark = false;
+
+constructor(private http: HttpClient) {
+  let guardado: string | null = null;
+  try { guardado = localStorage.getItem('tema'); } catch {}
+  this.aplicarTema(guardado === 'dark');
+}
+
+toggleTheme(): void {
+  this.aplicarTema(!this.dark);
+  try { localStorage.setItem('tema', this.dark ? 'dark' : 'light'); } catch {}
+}
+
+ private aplicarTema(oscuro: boolean): void {
+  this.dark = oscuro;
+  document.documentElement.setAttribute('data-theme', oscuro ? 'dark' : 'light');
+}
 
   ngOnInit(): void { this.loadLang(this.lang); }
 

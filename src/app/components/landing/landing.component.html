@@ -18,6 +18,11 @@
 
     <div class="nav-right">
       <div class="lang-selector" (click)="showLang = !showLang">
+        <button type="button" class="theme-toggle" (click)="toggleTheme()"
+        [attr.title]="dark ? t.nav.themeLight : t.nav.themeDark"
+        [attr.aria-label]="dark ? t.nav.themeLight : t.nav.themeDark">
+        <i class="bi" [class.bi-sun]="dark" [class.bi-moon]="!dark"></i>
+       </button>
         <img [src]="'https://flagcdn.com/w40/' + currentLang.country.toLowerCase() + '.png'"
            [alt]="currentLang.label" width="20" height="15" class="flag-img"/>
        <span class="lang-code">{{ currentLang.label }}</span>
